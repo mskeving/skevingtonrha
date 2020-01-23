@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: "/missyandphil",
+  pathPrefix: "/skevingtonrha",
   plugins: [
     "gatsby-plugin-sass",
     "gatsby-transformer-json",
