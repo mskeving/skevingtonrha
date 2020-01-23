@@ -1,5 +1,4 @@
 module.exports = {
-  pathPrefix: "/skevingtonrha",
   plugins: [
     "gatsby-plugin-sass",
     "gatsby-transformer-json",
