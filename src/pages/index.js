@@ -17,11 +17,6 @@ const Main = () => (
       <div className="part">Phil's</div>
     </div>
     <div className="subtitle">Marital Union</div>
-    <div className="rsvp">
-      <div className="frame1" />
-      <div className="frame2" />
-      RSVP
-    </div>
   </div>
 );
 
