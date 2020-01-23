@@ -5,11 +5,11 @@ export const getUser = () =>
     : {};
 const setUser = user =>
   window.localStorage.setItem("gatsbyUser", JSON.stringify(user));
-export const handleLogin = ({ password }) => {
-  if (password === "phil") {
+export const handleLogin = ({ banana }) => {
+  if (banana === "saratoga2020") {
     setUser({
-      username: `phil`,
-      name: `Phil`
+      username: `guest`,
+      name: `guest`
     });
     return true;
   }

@@ -4,7 +4,7 @@ import { handleLogin, isLoggedIn } from "../services/auth";
 
 class Login extends React.Component {
   state = {
-    password: ``,
+    banana: ``,
     error: false
   };
 
@@ -40,8 +40,8 @@ class Login extends React.Component {
             <div className="subtitle">Private Wedding Website</div>
             <form method="post" onSubmit={this.handleSubmit}>
               <input
-                type="password"
-                name="password"
+                type="text"
+                name="banana"
                 placeholder="Enter Password"
                 onChange={this.handleUpdate}
               />
@@ -54,7 +54,6 @@ class Login extends React.Component {
               </button>
             </form>
           </div>
-          <div />
         </div>
       </div>
     );
