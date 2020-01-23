@@ -17,6 +17,7 @@
     "styled-components": "^5.0.0"
   },
   "scripts": {
+    "publish": "gatsby build && gh-pages -d public",
     "deploy": "gatsby build && gh-pages -d public"
   }
 }
