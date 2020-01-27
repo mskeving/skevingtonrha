@@ -54,7 +54,7 @@ const Schedule = () => {
     { name: "Gathering in downtown Saratoga", time: "7 pm" }
   ];
   const saturdaySchedule = [
-    { name: "Guests arrive", time: "11:30 am" },
+    { name: "Guest arrival", time: "11:30 am" },
     { name: "Ceremony and lunch", time: "12 pm" },
     { name: "Lake hangout / Siesta", time: "2 pm" },
     { name: "Cocktails", time: "6 pm" },
