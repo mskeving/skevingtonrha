@@ -51,63 +51,83 @@ const Location = () => (
 
 const Schedule = () => {
   const fridaySchedule = [
-    { name: "Gathering in downtown Saratoga", time: "7 pm" },
+    { name: "Gathering in downtown Saratoga", time: "7 pm" }
   ];
   const saturdaySchedule = [
+    { name: "Guests arrive", time: "11:30 am" },
     { name: "Ceremony and lunch", time: "12 pm" },
-    { name: "Lake hangout and downtime", time: "2 pm" },
+    { name: "Lake hangout / Siesta", time: "2 pm" },
     { name: "Cocktails", time: "6 pm" },
     { name: "Dinner and night party", time: "7 pm" }
   ];
-  const sundaySchedule = [
-    { name: "Brunch", time: "10 am" },
-  ];
+  const sundaySchedule = [{ name: "Brunch", time: "10 am" }];
   return (
     <div className="card row schedule">
       <div className="subcard">
         <div className="day">
-          <div className="title">Friday, Sept. 18th</div>
+          <div className="title">
+            Friday, Sept. 18<span className="super">th</span>
+          </div>
           <div className="scheduleTable">
             {fridaySchedule.map((row, i) => (
-              <div className="scheduleRow" key={i}>
-                <div className="time">{row.time}</div>
-                <div className="spacer" />
-                <div className="eventName">{row.name}</div>
-              </div>
+              <ScheduleItem {...row} key={i} />
             ))}
           </div>
         </div>
         <div className="day">
-          <div className="title">Saturday, Sept. 19th</div>
+          <div className="title">
+            Saturday, Sept. 19<span className="super">th</span>
+          </div>
           <div className="scheduleTable">
             {saturdaySchedule.map((row, i) => (
-              <div className="scheduleRow" key={i}>
-                <div className="time">{row.time}</div>
-                <div className="spacer" />
-                <div className="eventName">{row.name}</div>
-              </div>
+              <ScheduleItem {...row} key={i} />
             ))}
           </div>
         </div>
         <div className="day">
-          <div className="title">Sunday, Sept. 20th</div>
+          <div className="title">
+            Sunday, Sept. 20<span className="super">th</span>
+          </div>
           <div className="scheduleTable">
             {sundaySchedule.map((row, i) => (
-              <div className="scheduleRow" key={i}>
-                <div className="time">{row.time}</div>
-                <div className="spacer" />
-                <div className="eventName">{row.name}</div>
-              </div>
+              <ScheduleItem {...row} key={i} />
             ))}
           </div>
         </div>
       </div>
       <div className="subcard">
         <div className="title">What to expect</div>
-        <div>The venue is right on Saratoga Lake, and is Missy's childhood home.</div>
-        <div>We hope you can join us for the full day Saturday and recommend traveling on Friday (or earlier!) if you can.</div>
-        <div style={{ marginTop: 25}}>fill this in more...</div>
+        <div>
+          The venue is right on Saratoga Lake, and is Missy's childhood home.
+        </div>
+        <div>
+          We hope you can join us for the full day Saturday and recommend
+          traveling on Friday (or earlier!) if you can.
+        </div>
+        <div style={{ marginTop: 25 }}>fill this in more...</div>
       </div>
+    </div>
+  );
+};
+
+const ScheduleItem = ({ time, name }) => {
+  const [hourMin, ampm] = time.split(" ");
+  let hour, min;
+  if (hourMin.indexOf(":") > 0) {
+    [hour, min] = hourMin.split(":");
+  } else {
+    hour = hourMin;
+  }
+
+  return (
+    <div className="scheduleRow">
+      <div className="time">
+        <span className="hour">{hour}</span>
+        {min ? <span className="min">{min}</span> : null}
+        <span className="ampm">{ampm}</span>
+      </div>
+      <div className="spacer" />
+      <div className="eventName">{name}</div>
     </div>
   );
 };

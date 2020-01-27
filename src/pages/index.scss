@@ -44,8 +44,7 @@ body {
 
 $breakpoints: (
   phone: 640px,
-  tablet: 768px,
-  desktop: 1024px
+  tablet: 1120px
 ) !default;
 
 .container {
@@ -247,6 +246,10 @@ $breakpoints: (
     display: block;
     .subcard {
       height: 500px;
+      border-bottom: 3px solid $yellow;
+      &:last-child {
+        border: none;
+      }
       .map {
         background-size: cover;
       }
@@ -271,6 +274,10 @@ $breakpoints: (
 
   .day {
     padding-bottom: 50px;
+    .title .super {
+      font-size: 12px;
+      vertical-align: super;
+    }
   }
 
   .scheduleTable {
@@ -282,8 +289,15 @@ $breakpoints: (
       justify-content: space-between;
 
       .time {
-        width: 50px;
+        min-width: 55px;
         margin-right: 10px;
+        .min {
+          font-size: 10px;
+          vertical-align: super;
+        }
+        .ampm {
+          margin-left: 3px;
+        }
       }
       .eventName {
         margin-left: 10px;
@@ -299,8 +313,21 @@ $breakpoints: (
   .schedule {
     display: block;
     .subcard {
+      border-bottom: 3px solid $yellow;
       &:last-child {
         border: none;
+      }
+    }
+  }
+}
+@media (max-width: map-get($breakpoints, phone)) {
+  .schedule {
+    .scheduleTable {
+      .scheduleRow {
+        justify-content: flex-start;
+        .spacer {
+          display: none;
+        }
       }
     }
   }
