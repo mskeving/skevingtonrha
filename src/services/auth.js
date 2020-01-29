@@ -6,7 +6,7 @@ export const getUser = () =>
 const setUser = user =>
   window.localStorage.setItem("gatsbyUser", JSON.stringify(user));
 export const handleLogin = ({ banana }) => {
-  if (banana === "saratoga2020") {
+  if (banana.toLowerCase() === "saratoga2020") {
     setUser({
       username: `guest`,
       name: `guest`
