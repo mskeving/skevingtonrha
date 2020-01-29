@@ -49,6 +49,28 @@ const Location = () => (
   </div>
 );
 
+const ScheduleItem = ({ time, name }) => {
+  const [hourMin, ampm] = time.split(" ");
+  let hour, min;
+  if (hourMin.indexOf(":") > 0) {
+    [hour, min] = hourMin.split(":");
+  } else {
+    hour = hourMin;
+  }
+
+  return (
+    <div className="scheduleRow">
+      <div className="time">
+        <span className="hour">{hour}</span>
+        {min ? <span className="min">{min}</span> : null}
+        <span className="ampm">{ampm}</span>
+      </div>
+      <div className="spacer" />
+      <div className="eventName">{name}</div>
+    </div>
+  );
+};
+
 const Schedule = () => {
   const fridaySchedule = [
     { name: "Gathering in downtown Saratoga", time: "7 pm" }
@@ -96,47 +118,84 @@ const Schedule = () => {
         </div>
       </div>
       <div className="subcard">
-        <div className="title">What to expect</div>
-        <div>
-          The venue is right on Saratoga Lake, and is Missy's childhood home.
-        </div>
-        <div>
-          We hope you can join us for the full day Saturday and recommend
-          traveling on Friday (or earlier!) if you can.
-        </div>
-        <div style={{ marginTop: 25 }}>fill this in more...</div>
+        <WhatToExpect />
       </div>
     </div>
   );
 };
 
-const ScheduleItem = ({ time, name }) => {
-  const [hourMin, ampm] = time.split(" ");
-  let hour, min;
-  if (hourMin.indexOf(":") > 0) {
-    [hour, min] = hourMin.split(":");
-  } else {
-    hour = hourMin;
-  }
-
-  return (
-    <div className="scheduleRow">
-      <div className="time">
-        <span className="hour">{hour}</span>
-        {min ? <span className="min">{min}</span> : null}
-        <span className="ampm">{ampm}</span>
-      </div>
-      <div className="spacer" />
-      <div className="eventName">{name}</div>
+const GettingThere = () => (
+  <div className="travel">
+    <div className="title">Getting there</div>
+    <div className="subtitle">By air</div>
+    <div style={{ marginTop: 5, marginBottom: 20 }}>
+      Saratoga Springs is a 35 minute drive north of the Albany Airport (ALB).
+      You can fly into Albany but there are no direct flights from the Bay Area.
+      Another option is to fly into NYC and take the train (see below).
     </div>
-  );
-};
+    <div className="subtitle">By train</div>
+    <div style={{ marginTop: 5, marginBottom: 20 }}>
+      The Empire Service Amtrak goes from Penn Station in New York to Albany
+      every 1-2 hours, with a couple trains a day making local stops directly to
+      Saratoga Springs. The NYC to Albany trip takes around 2.5 hours, and is
+      thoroughly pleasant. Sit on the left side of the train for scenic views of
+      the Hudson Valley.
+    </div>
+  </div>
+);
+
+const WhatToExpect = () => (
+  <>
+    <div className="title">What to expect</div>
+    <div style={{ marginBottom: 30 }}>
+      The venue is right on Saratoga Lake, and is at Missy's childhood home. We
+      hope you can join us for the full day Saturday and recommend traveling on
+      Friday (or earlier!) if you can.
+    </div>
+    <div style={{ marginBottom: 30 }}>
+      All of the events (both day and night) will take place outside in a
+      canopied tent, so please be prepared and have comfortable shoes and layers
+      of clothing.
+    </div>
+    <div style={{ marginBottom: 30 }}>
+      Following the more formal sit-down lunch, you'll have some unstructured
+      time to spend on the lake, play games, catch up with friends, or rest for
+      the evening activities.
+    </div>
+    <div style={{ marginBottom: 30 }}>
+      We'll reconvene for evening cocktails, a light/casual dinner, and dancing
+      into the night.
+    </div>
+  </>
+);
+
+const Accommodations = () => (
+  <div>
+    <div className="title">Accommodations</div>
+    <div style={{ marginBottom: 20 }}>
+      We are still figuring out the details around accommodations, but we will
+      update you as we get them!
+    </div>
+    <div>
+      If you have special constraints or considerations, please reach out and
+      let us know!
+    </div>
+  </div>
+);
 
 const App = () => (
   <div className="container">
     <Main />
     <Location />
     <Schedule />
+    <div className="card row">
+      <div className="subcard">
+        <GettingThere />
+      </div>
+      <div className="subcard">
+        <Accommodations />
+      </div>
+    </div>
   </div>
 );
 
