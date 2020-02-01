@@ -1,6 +1,8 @@
 $green: #0a4449;
 $yellow: #fff7b9;
 
+$descriptionLineHeight: 1.6em;
+
 * {
   box-sizing: border-box;
 }
@@ -55,6 +57,14 @@ $breakpoints: (
   height: 100%;
   display: flex;
   flex-direction: column;
+}
+
+.bodyLineHeight {
+  line-height: 1.4;
+}
+
+.addressLineHeight {
+  line-height: 1.8;
 }
 
 .card {
@@ -268,7 +278,7 @@ $breakpoints: (
   .location {
     display: block;
     .subcard {
-      height: 500px;
+      height: 420px;
       border-bottom: 3px solid $yellow;
       &:last-child {
         border: none;
@@ -334,6 +344,7 @@ $breakpoints: (
 }
 
 .travel {
+  padding-top: 40px;
   .subtitle {
     font-size: 16px;
     font-weight: 600;
@@ -367,6 +378,9 @@ $breakpoints: (
   .header {
     margin: 75px;
     margin-bottom: 0;
+  }
+  .shuttle {
+    padding-top: 10px;
   }
   .hotel {
     flex: 1;
