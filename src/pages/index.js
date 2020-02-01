@@ -154,9 +154,9 @@ const WhatToExpect = () => (
     <div className="title">What to expect</div>
     <div className="bodyLineHeight">
       <div style={{ marginBottom: 30 }}>
-        The venue is right on Saratoga Lake, and is at Missy's childhood home. We
-        hope you can join us for the full day Saturday and recommend traveling on
-        Friday (or earlier!) if you can.
+        We're so excited to invite you to our wedding! The venue is right on Saratoga
+        Lake, and is at Missy's childhood home. We hope you can join us for the full
+        day Saturday and recommend traveling on Friday (or earlier!) if you can.
       </div>
       <div style={{ marginBottom: 30 }}>
         All of the events (both day and night) will take place outside in a
