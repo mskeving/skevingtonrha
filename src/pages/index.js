@@ -154,7 +154,7 @@ const WhatToExpect = () => (
     <div className="title">What to expect</div>
     <div className="bodyLineHeight">
       <div style={{ marginBottom: 30 }}>
-        We're so excited to invite you to our wedding! The venue is right on Saratoga
+        We're excited to share our wedding details with you! The venue is right on Saratoga
         Lake, and is at Missy's childhood home. We hope you can join us for the full
         day Saturday and recommend traveling on Friday (or earlier!) if you can.
       </div>
@@ -191,6 +191,7 @@ const Accommodations = () => {
             title="Longfellows"
           ></iframe>
           <div className="description addressLineHeight">
+            <div><a href="https://www.longfellows.com/hotel/rooms">Longfellows</a></div>
             <div>500 Union Ave</div>
             <div>Saratoga Springs, NY</div>
             <div>12866</div>
@@ -203,6 +204,7 @@ const Accommodations = () => {
             title="Hilton Garden Inn"
           ></iframe>
           <div className="description addressLineHeight">
+            <div><a href="https://www.reservations.com/hotel/hilton-garden-inn-saratoga-springs">The Hilton Garden Inn</a></div>
             <div>125 S Broadway</div>
             <div>Saratoga Springs, NY</div>
             <div>12866</div>
