@@ -155,7 +155,7 @@ const WhatToExpect = () => (
     <div className="bodyLineHeight">
       <div style={{ marginBottom: 30 }}>
         We're excited to share our wedding details with you! The venue is right on Saratoga
-        Lake, and is at Missy's childhood home. We hope you can join us for the full
+        Lake, and is Missy's childhood home. We hope you can join us for the full
         day Saturday and recommend traveling on Friday (or earlier!) if you can.
       </div>
       <div style={{ marginBottom: 30 }}>
@@ -188,10 +188,10 @@ const Accommodations = () => {
         <div className="hotel">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3295.76961789303!2d-73.72738656546608!3d43.06094684906703!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x67a8679d5bb3f0c3!2sLongfellows%20Restaurant!5e0!3m2!1sen!2sus!4v1579231348270!5m2!1sen!2sus"
-            title="Longfellows"
+            title="Longfellows Inn and Restaurant"
           ></iframe>
           <div className="description addressLineHeight">
-            <div><a href="https://www.longfellows.com/hotel/rooms">Longfellows</a></div>
+            <div><a target="_blank" href="https://www.longfellows.com/hotel/rooms">Longfellows Inn and Restaurant</a></div>
             <div>500 Union Ave</div>
             <div>Saratoga Springs, NY</div>
             <div>12866</div>
@@ -204,7 +204,7 @@ const Accommodations = () => {
             title="Hilton Garden Inn"
           ></iframe>
           <div className="description addressLineHeight">
-            <div><a href="https://www.reservations.com/hotel/hilton-garden-inn-saratoga-springs">The Hilton Garden Inn</a></div>
+            <div><a target="_blank" href="https://www.reservations.com/hotel/hilton-garden-inn-saratoga-springs">The Hilton Garden Inn</a></div>
             <div>125 S Broadway</div>
             <div>Saratoga Springs, NY</div>
             <div>12866</div>
