@@ -196,6 +196,7 @@ const Accommodations = () => {
             <div>Saratoga Springs, NY</div>
             <div>12866</div>
             <div>0.5 miles</div>
+            <div>$209/night</div>
           </div>
         </div>
         <div className="hotel">
@@ -209,6 +210,7 @@ const Accommodations = () => {
             <div>Saratoga Springs, NY</div>
             <div>12866</div>
             <div>4 miles</div>
+            <div>$199/night</div>
           </div>
         </div>
       </div>
