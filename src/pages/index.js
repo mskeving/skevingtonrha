@@ -135,11 +135,11 @@ const GettingThere = () => (
         If you have a tight schedule, we recommend flying in here if you can.
       </div>
       <div style={{ marginTop: 5, marginBottom: 20 }}>
-        If you have the time to take advantage of NYC, it's an easy 2.5 hour train
-        ride away. The Empire Service Amtrak goes from Penn Station to Albany
-        every 1-2 hours, with a couple trains a day making local stops directly to
-        Saratoga Springs. The train follows the Hudson River and is a beautiful
-        ride in September.
+        If you have the time to take advantage of NYC, it's an easy 2.5 hour
+        train ride away. The Empire Service Amtrak goes from Penn Station to
+        Albany every 1-2 hours, with a couple trains a day making local stops
+        directly to Saratoga Springs. The train follows the Hudson River and is
+        a beautiful ride in September.
       </div>
       <div style={{ marginTop: 5, marginBottom: 20 }}>
         There are a lot of fun places not too far away, such as The Adirondacks,
@@ -154,9 +154,10 @@ const WhatToExpect = () => (
     <div className="title">What to expect</div>
     <div className="bodyLineHeight">
       <div style={{ marginBottom: 30 }}>
-        We're excited to share our wedding details with you! The venue is right on Saratoga
-        Lake, and is at Missy's childhood home. We hope you can join us for the full
-        day Saturday and recommend traveling on Friday (or earlier!) if you can.
+        We're excited to share our wedding details with you! The venue is right
+        on Saratoga Lake, and is Missy's childhood home. We hope you can join us
+        for the full day Saturday and recommend traveling on Friday (or
+        earlier!) if you can.
       </div>
       <div style={{ marginBottom: 30 }}>
         All of the events (both day and night) will take place outside in a
@@ -164,9 +165,9 @@ const WhatToExpect = () => (
         shoes and layers of clothing.
       </div>
       <div style={{ marginBottom: 30 }}>
-        The ceremony and lunch will be more formal. Following that we're hoping people
-        take advantage of the unstructured time to spend on the lake, play games,
-        catch up with friends, or rest for the evening activities.
+        The ceremony and lunch will be more formal. Following that we're hoping
+        people take advantage of the unstructured time to spend on the lake,
+        play games, catch up with friends, or rest for the evening activities.
       </div>
       <div style={{ marginBottom: 30 }}>
         We'll reconvene for evening cocktails, a more casual dinner, and dancing
@@ -181,20 +182,32 @@ const Accommodations = () => {
     <div className="card accommodations">
       <div className="header">
         <div className="title">Accommodations</div>
-        <div className="bodyLineHeight">There are room blocks reserved at two locations. Call to book and be sure to mention the Skevington/Rha wedding.</div>
-        <div className="shuttle bodyLineHeight">A shuttle will be available to bring you back and forth from the venue.</div>
+        <div className="bodyLineHeight">
+          There are room blocks reserved at two locations. Call to book and be
+          sure to mention the Skevington/Rha wedding.
+        </div>
+        <div className="shuttle bodyLineHeight">
+          A shuttle will be available to bring you back and forth from the
+          venue.
+        </div>
       </div>
       <div className="row">
         <div className="hotel">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3295.76961789303!2d-73.72738656546608!3d43.06094684906703!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x67a8679d5bb3f0c3!2sLongfellows%20Restaurant!5e0!3m2!1sen!2sus!4v1579231348270!5m2!1sen!2sus"
-            title="Longfellows"
+            title="Longfellows Inn and Restaurant"
           ></iframe>
           <div className="description addressLineHeight">
-            <div><a href="https://www.longfellows.com/hotel/rooms">Longfellows</a></div>
+            <div>
+              <a target="_blank" href="https://www.longfellows.com/hotel/rooms">
+                Longfellows Inn and Restaurant
+              </a>
+            </div>
             <div>500 Union Ave</div>
-            <div>Saratoga Springs, NY</div>
-            <div>12866</div>
+            <div>Saratoga Springs, NY 12866</div>
+            <div>
+              <a href="tel:5185870108">(518) 587-0108</a>
+            </div>
             <div>0.5 miles</div>
             <div>$209/night</div>
           </div>
@@ -205,18 +218,27 @@ const Accommodations = () => {
             title="Hilton Garden Inn"
           ></iframe>
           <div className="description addressLineHeight">
-            <div><a href="https://www.reservations.com/hotel/hilton-garden-inn-saratoga-springs">The Hilton Garden Inn</a></div>
+            <div>
+              <a
+                target="_blank"
+                href="https://www.reservations.com/hotel/hilton-garden-inn-saratoga-springs"
+              >
+                The Hilton Garden Inn
+              </a>
+            </div>
             <div>125 S Broadway</div>
-            <div>Saratoga Springs, NY</div>
-            <div>12866</div>
+            <div>Saratoga Springs, NY 12866</div>
+            <div>
+              <a href="tel:5185871500">(518) 587-1500</a>
+            </div>
             <div>4 miles</div>
             <div>$199/night</div>
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 const App = () => (
   <div className="container">
