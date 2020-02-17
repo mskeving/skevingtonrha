@@ -221,7 +221,7 @@ const Accommodations = () => {
             <div>
               <a
                 target="_blank"
-                href="https://www.reservations.com/hotel/hilton-garden-inn-saratoga-springs"
+                href="http://group.hiltongardeninn.com/SkevingtonRhaWedding"
               >
                 The Hilton Garden Inn
               </a>
