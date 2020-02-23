@@ -23,7 +23,6 @@ export const Curator = ({ data, urlType }) => {
   const displayLinks = links.filter(link => {
     return includedLinks[link.message_id];
   });
-
   const jsonValue = JSON.stringify(displayLinks, null, 2);
 
   return (
