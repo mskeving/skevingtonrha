@@ -12,6 +12,19 @@ module.exports = {
         name: "data",
         path: `${__dirname}/src/data/`
       }
+    },
+    {
+      resolve: "gatsby-plugin-load-script",
+      options: {
+        src: "https://rawgithub.com/soulwire/sketch.js/v1.1/js/sketch.min.js"
+      }
+    },
+    {
+      resolve: "gatsby-plugin-google-analytics",
+      options: {
+        trackingId: "UA-157526518-1",
+        head: false
+      }
     }
   ]
 };
